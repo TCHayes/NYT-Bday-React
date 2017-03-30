@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #757575;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+	background-color: #F0F0F0;
+}
+
+/*#textTitle {
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+  text-align: center;
+}*/
+
+form {
+  text-align: center;
+}
+
+form label {
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+}
+
+#date-selection , #searchButton{
+	 background-color: white;
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
+    text-align: center;
+    border: 0;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#searchButton:hover , #date-selection:hover{
+	box-shadow: 6px 5px 10px #CECECE;
+}
+
+#date-selection {
+  width: 190px;
+}
+
+#search{
+  margin: 40px auto;
+}
+
+#results-container{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.article-div{
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: 'Sahitya', serif;
+  border-radius: 18px;
+  border: 2px solid darkgrey;
+  padding: 20px;
+  background-color: white;
+}
+
+.inner{
+  border: 1px solid darkgrey;
+  padding: 0px 10px;
+  background-color: #EDEDED;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.logo-img{
+  width: 30px;
+  height: 30px;
+}
+
+
+/*This styling below applies only to screens with more than 683px:*/
+@media screen and (min-width: 683px) {
+  #results-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .article-div{
+    width: 320px;
+  }
+
+  /*.inner a {
+  	font-size: 10px;
+  }*/
+
+  .article-div:hover{
+    box-shadow: 6px 5px 30px #505050;
+  }
+}
