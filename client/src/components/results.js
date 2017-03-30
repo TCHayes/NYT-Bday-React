@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ArticleCard from './article-card';
-import * as actions from '../actions';
 import { connect } from 'react-redux';
 import '../../public/main.css';
 
@@ -11,10 +10,15 @@ function mapStateToProps(state, props) {
 }
 
 export function Results (props) {
-  const cards = props.rawData.map((article, index) => <ArticleCard key={index}
-                                                headline={article.headline.main}
-                                                  lead={article.lead_paragraph}
-                                                      url={article.web_url}/>)
+  const cards = props.rawData.map((article, index) => {
+    return <ArticleCard
+        key={index}
+        headline={article.headline.main}
+        lead={article.lead_paragraph}
+        url={article.web_url}
+        byline={article.byline ? article.byline.original : ''}
+    />
+  });
 
   return (
     <div id='results-container'>
