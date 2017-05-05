@@ -1,6 +1,6 @@
 # Your New York Times Birthday
 
-## See the front page from the day you were born
+### See the front page from the day you were born
 
 This is a simple React/Redux app ([originally written with just jQuery](https://github.com/TCHayes/NYT-bday)) for viewing headlines and briefs from the New York Times front page on the day you were born (or any other date you enter).
 
