@@ -39,4 +39,4 @@ This is a simple, one page app, which asks the user to enter a date in the forma
 * Redux
 
 ## Future Features
-* Add ability to handle other date formats (i.e. February 18, 1987 vs only accepting 02/18/1987)
+See Issues tab for planned future features.
