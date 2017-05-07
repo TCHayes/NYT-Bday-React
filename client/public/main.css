@@ -15,59 +15,57 @@ body {
 	background-color: #F0F0F0;
 }
 
-/*#textTitle {
-	font-family: 'Raleway', sans-serif;
-	font-size: 40px;
-  text-align: center;
-}*/
-
 form {
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 form label {
-  font-family: 'PT Serif', serif;
   font-size: 20px;
 }
 
 #date-selection , #searchButton{
-	 background-color: white;
-    font-size: 20px;
-    height: 30px;
-    width: 100px;
-    margin-top: 20px;
-    text-align: center;
-    border: 0;
-    border: 1px solid darkgrey;
-    border-radius: 5px;
-    font-family: 'Raleway', sans-serif;
+  background-color: #fafafa;
+  font-size: 20px;
+  height: 30px;
+  width: 100px;
+  margin-top: 20px;
+  text-align: center;
+  border: 0;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
 }
 
 #searchButton:hover , #date-selection:hover{
 	box-shadow: 6px 5px 10px #CECECE;
 }
 
+#searchButton:active {
+  background-color: #e0e0e0;
+}
+
 #date-selection {
   width: 190px;
 }
 
-#search{
+#search {
   margin: 40px auto;
 }
 
 #results-container{
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
 }
 
 .article-div{
   margin-bottom: 10px;
-  width: 100%;
-  font-family: 'Sahitya', serif;
+  width: 90%;
   border-radius: 18px;
   border: 2px solid darkgrey;
   padding: 20px;
-  background-color: white;
+  background-color: #fafafa;
+  font-family: 'Times', serif;
 }
 
 .inner{
@@ -76,6 +74,8 @@ form label {
   background-color: #EDEDED;
   width: 100%;
   border-radius: 5px;
+  text-align: left;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .logo-img{
@@ -93,15 +93,12 @@ form label {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: stretch;
   }
 
   .article-div{
     width: 320px;
   }
-
-  /*.inner a {
-  	font-size: 10px;
-  }*/
 
   .article-div:hover{
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);

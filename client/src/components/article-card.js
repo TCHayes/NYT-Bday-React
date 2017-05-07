@@ -16,7 +16,7 @@ export function ArticleCard (props){
           <h3>{props.headline}</h3>
           <h5>{props.byline}</h5>
           <div className="inner">
-            <h5>{props.lead} <a href={props.url}>More...</a></h5>
+            <p>{props.lead} <a href={props.url}>More...</a></p>
           </div>
        </div>
     )
