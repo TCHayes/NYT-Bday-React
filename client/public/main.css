@@ -16,6 +16,7 @@ body {
 }
 
 form {
+  padding: 0 20px;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
@@ -25,15 +26,15 @@ form label {
 }
 
 #date-selection , #searchButton{
+  margin-top: 20px;
+  padding-top: 3px;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
   background-color: #fafafa;
   font-size: 20px;
   height: 30px;
   width: 100px;
-  margin-top: 20px;
   text-align: center;
-  border: 0;
-  border: 1px solid darkgrey;
-  border-radius: 5px;
 }
 
 #searchButton:hover , #date-selection:hover{
